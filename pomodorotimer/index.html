@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Promodoro Timer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+body {
+  background-image: url('istockphoto-695419926-612x612.jpg');
+}
+</style>
+    <div class="container my-3">
+        <h2 style="font-weight: 500;" class="text-uppercase fancy-font text-center display-4">Pomodoro Timer</h2>
+        <div class="worktimer my-4">
+        </div>
+        <div>
+            <input type="text" class="taskname" placeholder="Task Name">
+        </div>
+        <div class="wb-box my-4">
+            <div class="wt-box">
+                <label for="">Work Time</label>
+                <input type="number" class="workinterval" value="25" readonly>
+            </div>
+            <div class="wt-box">
+                <label for="">Break Time</label>
+                <input type="number" class="breakinterval" value="5" readonly>
+            </div>
+        </div>
+        <div class=" alertmessagebox text-center mb-2"><small class="alertmessage d-none font-weight-bold ">You Have to Enter task name before
+                start!</small>
+        </div>
+        <div class="actionbtns">
+            <button class="btnstart startgrey "><i class="fas fa-play-circle"></i></button>
+            <button class="btnpause bg-warning d-none "><i class="fas fa-pause-circle"></i></button>
+            <button class="btnresume bg-warning d-none "><i class="fas fa-step-forward"></i> </button>
+            <button class="btnstop bg-danger d-none "><i class="fas fa-stop-circle"></i></button>
+        </div>
+        <div class="mt-4">
+            <span class="text-uppercase text-center display-5 ">Task Completion Time</span>
+
+        </div>
+        <div class="completedList my-3">
+            <ul class="py-3">
+
+            </ul>
+
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
